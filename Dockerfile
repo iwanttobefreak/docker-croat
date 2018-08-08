@@ -8,4 +8,6 @@ RUN wget http://croat.cat/apps/CroatCore_v1_55_ubuntu_16.04.tar.gz
 
 RUN tar -xzvf CroatCore_v1_55_ubuntu_16.04.tar.gz
 
+CMD sysctl -w vm.nr_hugepages=128
+
 CMD cd /CROATCore/ && ./xmr-stak-cpu
